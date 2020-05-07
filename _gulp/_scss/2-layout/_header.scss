@@ -1,4 +1,29 @@
 /* header */
 .header {
-  background-color: $color-gray;
+  // background: linear-gradient(to right, #fff, #F6F6F6 40%);
+  background: rgba($color-white,.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  &__wrapper {
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  &__nav {
+    flex-grow: 1;
+    display: none;
+  }
+  &__btn {
+    flex-shrink: 0;
+  }
+  &-holder {
+    height: 103px;
+  }
 }

@@ -11,6 +11,14 @@
         <meta name="format-detection" content="address=no">
         <meta name="format-detection" content="email=no">
         <meta content="notranslate" name="google">
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+        <link rel="manifest" href="./favicon/site.webmanifest">
+        <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#d39c50">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" href="./js/libs/magnific-popup/magnific-popup.css">
         <link rel="stylesheet" href="./css/style.min.css">
     </head>
@@ -19,29 +27,48 @@
         <!-- Header-->
         <header class="header">
             <div class="container">
-                <nav class="navigation" role="navigation">
-                    <ul>
-                        <li class="active"><a href="#" title="Главная">Главная</a></li>
-                        <li><a href="#" title="О нас">О нас</a></li>
-                        <li><a href="#" title="Продукция">Продукция</a></li>
-                        <li><a href="#" title="Сотрудничество">Сотрудничество</a></li>
-                        <li><a href="#" title="Наши магазины">Наши магазины</a></li>
-                        <li><a href="#" title="Контакты">Контакты</a></li>
-                    </ul>
-                </nav>
+                <div class="header__wrapper">
+                    <div class="logo header__logo"><img src="./images/logo.png" alt=""></div>
+                    <nav class="nav header__nav">
+                        <ul>
+                            <li><a href="#!">о проекте</a></li>
+                            <li><a href="#!">история</a></li>
+                        </ul>
+                    </nav>
+                    <button class="header__btn" type="button"><span>Получить букву</span></button>
+                </div>
             </div>
         </header>
-        <div class="content">
-            <div class="container">
-                <h1>Уникальный проект</h1>
-                <p>вреев часто называют «народ Книги». Такая характеристика всегда воспринимается как весьма лестная, и евреи часто гордятся тем, что они «народ Книги». </p>
-                <p>Книга, о которой идет речь, легла в основу своеобразного «бестселлера» всех времен и народов. Около шести миллиардов изданных экземпляров, среднегодовой объем продаж примерно в сто миллионов копий, переводы на свыше двух тысяч языков мира… Божественная мудрость текста, данного евреям у горы Синай, служит источником духовности для всего мира.</p>
-            </div>
-        </div>
+        <div class="header-holder"></div>
+        <!-- Content-->
+        <main class="content">
+            <section class="section">
+                <div class="container">
+                    <div class="content__head">
+                        <h2>Что такое Тора?</h2>
+                    </div>
+                    <p>Евреев часто называют «народ Книги». Такая характеристика всегда воспринимается как весьма лестная, и евреи часто гордятся тем, что они «народ Книги».</p>
+                    <p>Книга, о которой идет речь, легла в основу своеобразного «бестселлера» всех времен и народов. Около шести миллиардов изданных экземпляров, среднегодовой объем продаж примерно в сто миллионов копий, переводы на свыше двух тысяч языков мира… Божественная мудрость текста, данного евреям у горы Синай, служит источником духовности для всего мира.</p>
+                    <p>Тора, что в переводе с иврита означает «учение», — это та Книга, которая создала наш народ, ведет и хранит его на протяжении веков. Наши мудрецы говорят о ней как о духовной карте мироздания, указывающей направление на единение со Всевышним.</p>
+                    <p>Тора устанавливает нормы поведения человека, определяющие его поступки, она показывает человеку цель, к которой он должен стремиться в своем духовном и физическом развитии.</p>
+                </div>
+            </section>
+        </main>
         <!-- Footer-->
         <footer class="footer">
             <div class="container">
-                <div>&copy; 2018</div>
+                <div class="footer__wrapper">
+                    <div class="footer__wrapper-left">
+                        <p><b>Религиозная организация ортодоксального иудаизма - Московская Марьинорощинская Еврейская Община </b><br><span class="font-weight-normal">ОГРН 1027700564462 <br>ИНН 7715000509 <br>КПП 771501001 </span></p>
+                    </div>
+                    <div class="footer__wrapper-center">
+                        <p><b>Юридический адрес организации: </b><br>127018, г. Москва 2-й Вышеславцев пер, д.5 А</p>
+                        <p> <a href="mailto:">sefertora@gmail.com</a><br><a href="tel:">0 800 987 654 321</a></p>
+                    </div>
+                    <div class="footer__wrapper-right">
+                        <div class="footer__logos"><img class="footer__logos--1" src="./tmp/footer-logo-1.png" alt=""><img class="footer__logos--2" src="./tmp/footer-logo-2.png" alt=""></div>
+                    </div>
+                </div>
             </div>
         </footer>
         <div style="height: 1000px; background-color: #000"></div>

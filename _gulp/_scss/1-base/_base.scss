@@ -18,8 +18,10 @@ html, body {
 
 body {
   // background-color: alpha(var(--color-primary), 1);
-  background: $color-white;
-  font-size: rem(18px);
+  background: #F6F6F6;
+  // font-size: rem(18px);
+  font-size: rem(16px);
+  font-weight: 500;
   font-family: $font-muller;
   color: $primary-color;
   -webkit-font-smoothing: antialiased;
@@ -29,21 +31,25 @@ body {
 //  Typography
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   color: $primary-color;
-  font-weight: bold;
+  font-weight: 400;
   text-decoration: none;
   margin: 0 0 15px 0;
 }
 .h1, h1 {
-  font-size: rem(100px);
-  line-height: 1.05;
+  // font-size: rem(100px);
+  font-size: rem(40px);
+  line-height: 1;
   letter-spacing: -1px;
-  margin-bottom: 25px;
+  // margin-bottom: 24px;
+  margin-bottom: 15px;
   font-weight: 900;
 }
 .h2, h2 {
-  font-size: rem(18px);
-  line-height: 1.14;
+  // font-size: rem(80px);
+  font-size: rem(35px);
+  line-height: 1;
   margin-bottom: 20px;
+  font-weight: 900;
 }
 .h3, h3 {
   font-size: rem(16px);
@@ -66,8 +72,9 @@ small, .small {
 }
 
 p {
-  line-height: 22px;
-  margin: 0 0 20px 0;
+  line-height: 1.65;
+  // margin: 0 0 35px 0;
+  margin: 0 0 25px 0;
 }
 
 em, i, .em, .i {
@@ -89,19 +96,19 @@ hr {
 // Links
 a, .link {
   color: $link-color;
-  text-decoration: underline;
+  text-decoration: none;
   outline: none;
   transition: color 0.35s, background 0.35s, border 0.35s;
   &:hover, &:focus, &:active {
     color: $link-color;
-    text-decoration: none;
+    text-decoration: underline;
     outline: none;
   }
 }
 
 a.link {
   &:hover, &:focus, &:active {
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
 
@@ -186,7 +193,7 @@ img, .img {
 
 /* section */
 .section {
-  padding: 50px 0;
+  padding: 40px 0;
   min-width: 320px;
 }
 

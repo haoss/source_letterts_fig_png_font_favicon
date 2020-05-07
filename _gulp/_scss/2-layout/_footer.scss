@@ -1,4 +1,36 @@
 /* footer */
 .footer {
-  background-color: $color-gray;
+  background-color: transparent;
+  text-align: center;
+  padding: 70px 0 40px 0;
+  color: #93939B;
+  b {
+    color: $primary-color;
+    font-weight: 500;
+  }
+  p {
+    line-height: 1.9;
+  }
+  a {
+    color: #93939B;
+    &:hover {
+      color: $link-color;
+    }
+  }
+  &__logos {
+    &--1 {
+      width: 104px;
+    }
+    &--2 {
+      width: 112px;
+    }
+    img {
+      &+img {
+        margin-left: 20px;
+      }
+    }
+  }
+  &__wrapper {
+    padding: 0 20px;
+  }
 }
