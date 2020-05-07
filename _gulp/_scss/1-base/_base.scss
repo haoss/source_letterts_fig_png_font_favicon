@@ -19,8 +19,8 @@ html, body {
 body {
   // background-color: alpha(var(--color-primary), 1);
   background: $color-white;
-  font-size: rem(16px);
-  font-family: $primary-font;
+  font-size: rem(18px);
+  font-family: $font-muller;
   color: $primary-color;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -34,10 +34,11 @@ body {
   margin: 0 0 15px 0;
 }
 .h1, h1 {
-  font-size: rem(21px);
+  font-size: rem(100px);
   line-height: 1.05;
   letter-spacing: -1px;
   margin-bottom: 25px;
+  font-weight: 900;
 }
 .h2, h2 {
   font-size: rem(18px);
