@@ -7,31 +7,120 @@ html(lang="ru")
 
   include ./_include/_head
 
-  body
+  body#body
+    .base
+      .base__wrapper
 
-    // Preloader
-    include ./_include/_preloader
+        // Preloader
+        include ./_include/_preloader
 
-    include ./_include/_header
+        include ./_include/_header
 
-    // Content
-    main.content
+        // Content
+        main.content
 
+          // Section
+          section.section.roll
+            .container
 
-      section.section
-        .container
+              .letter
+                .letter__wrapper
+                  img(src="./images/bg-letter/letter.png", alt="").letter__img.letter__img--pl
+                  img(src="./images/bg-letter/letter.png", alt="").letter__img.letter__img--pr
+                  img(src="./images/bg-letter/letter-b.png", alt="").letter__img.letter__img--pb
 
-          .content__head
-            h2 Что такое Тора?
-          
-          p Евреев часто называют «народ Книги». Такая характеристика всегда воспринимается как весьма лестная, и евреи часто гордятся тем, что они «народ Книги».
-          p Книга, о которой идет речь, легла в основу своеобразного «бестселлера» всех времен и народов. Около шести миллиардов изданных экземпляров, среднегодовой объем продаж примерно в сто миллионов копий, переводы на свыше двух тысяч языков мира… Божественная мудрость текста, данного евреям у горы Синай, служит источником духовности для всего мира.
-          p Тора, что в переводе с иврита означает «учение», — это та Книга, которая создала наш народ, ведет и хранит его на протяжении веков. Наши мудрецы говорят о ней как о духовной карте мироздания, указывающей направление на единение со Всевышним.
-          p Тора устанавливает нормы поведения человека, определяющие его поступки, она показывает человеку цель, к которой он должен стремиться в своем духовном и физическом развитии.
+              .row
+                .col
 
+                  .roll__wrapper
+                    .roll__wrapper-right
+                      img(src="./images/bg-roll.png", alt="").roll__wrapper-img
+                      .roll__block
+                        img(src="./images/roll-left.png", alt="").roll__block-img1
+                        img(src="./images/roll-right.png", alt="").roll__block-img2
+                        img(src="./images/roll-center.png", alt="").roll__block-img3
+                    .roll__wrapper-content
+                      .roll__content
+                        .roll__content-wraper
+                          .roll__head
+                            h1 Уникальный проект 
+                          .roll__untitle Свиток Торы русскоязычных евреев
+                          .roll__description Получите букву в Торе и 
+                            br
+                            | духовный щит для себя и своих близких
+                      a(href="#payment").btn.anchor
+                        span Получить букву
 
-    include ./_include/_footer
-    div(style="height: 1000px; background-color: #000")
+          // Section
+          section.section.learn#learn
+            .container
+
+              .row
+                .col
+                  .content__head
+                    h2 Узнать больше о проекте
+
+          // Section
+          section.section.what
+            .container
+
+              .row
+                .col
+                  .content__head
+                    h2 Что такое Тора?
+                  
+                  p Евреев часто называют «народ Книги». Такая характеристика всегда воспринимается как весьма лестная, и евреи часто гордятся тем, что они «народ Книги».
+                  p Книга, о которой идет речь, легла в основу своеобразного «бестселлера» всех времен и народов. Около шести миллиардов изданных экземпляров, среднегодовой объем продаж примерно в сто миллионов копий, переводы на свыше двух тысяч языков мира… Божественная мудрость текста, данного евреям у горы Синай, служит источником духовности для всего мира.
+                  p Тора, что в переводе с иврита означает «учение», — это та Книга, которая создала наш народ, ведет и хранит его на протяжении веков. Наши мудрецы говорят о ней как о духовной карте мироздания, указывающей направление на единение со Всевышним.
+                  p Тора устанавливает нормы поведения человека, определяющие его поступки, она показывает человеку цель, к которой он должен стремиться в своем духовном и физическом развитии.
+
+          // Section
+          section.section.history#history
+            .container
+
+              .row
+                .col
+                  .content__head
+                    h2 История возникновения обычая
+
+          // Section
+          section.section.facts
+            .container
+
+              .row
+                .col
+                  .content__head
+                    h2 Интересные факты о Торе
+
+          // Section
+          section.section.words
+            .container
+
+              .row
+                .col
+                  .content__head
+                    h2 Слова Ребе о важности иметь букву в свитке Торы
+
+          // Section
+          section.section.initiative
+            .container
+
+              .row
+                .col
+                  .content__head
+                    h2 Благородная инициатива
+
+          // Section
+          section.section.payment#payment
+            .container
+
+              .row
+                .col
+                  .payment__form
+                    .h3 Платежная информация
+
+        include ./_include/_footer
+        div(style="height: 1000px; background-color: #000")
 
     // Load Scripts
     include ./_include/_footer-js

@@ -1,34 +1,193 @@
-/*==========  Desktop First Method  ==========*/
+@include media-breakpoint-up(md) {
+  .header {
+    backdrop-filter: none;
+    background: linear-gradient(to right, $color-white, rgba($color-white,0) 40%);
+    box-shadow: none;
+    &__btn {
+      margin-right: 25px;
+      background-color: $color-white;
+      color: $color-brown;
+    }
+    &__wrapper {
+      height: 94px;
+    }
+  }
+  .roll {
+    padding-bottom: 45px;
+    &__wrapper {
+      display: flex;
+      margin: 0;
+      padding-top: 100px;
+      &-right {
+        order: 2;
+      }
+      &-left {
+        order: 1;
+      }
+      &-content {
+        text-align: left;
+      }
+      &-img {
+        display: block;
+        top: 0;
+        margin-top: -100px;
+        width: 965px;
+      }
+    }
+    &__untitle {
+      text-align: left;
+      max-width: 270px;
+    }
+    &__head {
+      text-align: left;
+      margin-left: 0;
+    }
+    &__block {
+      width: 358px;
+      height: 530px;
+      transform: translateX(37px);
+      margin-top: -116px;
+      margin-bottom: 0;
+      &-img3 {
+        bottom: 64px;
+        width: 273px;
+        height: 405px;
+      }
+    }
+    &__description {
+      white-space: nowrap;
+      margin-right: -50px;
+      br {
+        display: block;
+      }
+    }
+  }
+  .learn {
+    padding-top: 45px;
+  }
+}
 
-@media only screen and (min-width: 1999px) {}
+@include media-breakpoint-up(lg) {
+  .roll {
+    padding-bottom: 55px;
+    &__block {
+      width: 500px;
+      transform: translateX(0);
+      &-img3 {
+        width: 406px;
+        margin-left: 48px;
+      }
+    }
+    &__untitle {
+      font-size: rem(22px);
+      margin-bottom: 15px;
+    }
+    &__wrapper {
+      &-content {
+        flex-grow: 1;
+        width: 50%;
+      }
+      &-right {
+        width: 50%;
+      }
+      &-img {
+        margin-left: -35px;
+      }
+    }
+  }
+  .header {
+    &__nav {
+      display: block;
+    }
+    &__logo {
+      flex-grow: 0;
+    }
+  }
+  .learn {
+    padding-top: 75px;
+  }
+}
 
-@media only screen and (max-width: 1599px) {}
+@include media-breakpoint-up(xl) {
+  .roll {
+    padding-bottom: 55px;
+    &__untitle {
+      font-size: rem(32px);
+      max-width: 380px;
+    }
+    &__description {
+      font-size: rem(18px);
+    }
+    &__block {
+      width: 634px;
+      height: 667px;
+      &-img1, &-img2 {
+        width: 71px;
+      }
+      &-img3 {
+        width: 506px;
+        height: auto;
+        margin-left: 66px;
+        bottom: 88px;
+      }
+    }
+    &__wrapper {
+      &-img {
+        margin-left: -65px;
+      }
+    }
+  }
+  .learn {
+    padding-top: 60px;
+  }
+}
 
-@media only screen and (max-width: 1439px) {}
-
-@media only screen and (max-width: 1199px) {}
-
-@media only screen and (max-width: 991px) {}
-
-@media only screen and (max-width: 767px) {}
-
-@media only screen and (max-width: 479px) {}
-
-@media only screen and (max-width: 319px) {}
-
-/*==========  Mobile First Method  ==========*/
-@media only screen and (min-width: 320px) {}
-
-@media only screen and (min-width: 480px) {}
-
-@media only screen and (min-width: 768px) {}
-
-@media only screen and (min-width: 992px) {}
-
-@media only screen and (min-width: 1200px) {}
-
-@media only screen and (min-width: 1440px) {}
-
-@media only screen and (max-width: 1600px) {}
-
-@media only screen and (min-width: 1920px) {}
+@include media-breakpoint-up(xxl) {
+  .header {
+    &__btn {
+      margin-right: 65px;
+    }
+  }
+  .roll {
+    padding-bottom: 65px;
+    &__wrapper {
+      padding-top: 150px;
+      &-img {
+        width: 1199px;
+        margin-left: -80px;
+      }
+    }
+    &__untitle {
+      font-size: rem(45px);
+      line-height: 1.25;
+      max-width: 520px;
+      margin-bottom: 25px;
+    }
+    &__description {
+      font-size: rem(22px);
+      line-height: 1.5;
+      &::before {
+        top: 13px;
+      }
+    }
+    &__content {
+      margin-bottom: 45px;
+    }
+    &__block {
+      width: 803px;
+      height: 850px;
+      margin-top: -160px;
+      &-img1, &-img2 {
+        width: 90px;
+      }
+      &-img3 {
+        margin-left: 83px;
+        bottom: 114px;
+        width: 642px;
+      }
+    }
+  }
+  .learn {
+    padding-top: 65px;
+  }
+}

@@ -1,1 +1,228 @@
 /* modules */
+.letter {
+  position: relative;
+  height: 0;
+  &__wrapper {
+    position: absolute;
+    width: 100%;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &--fll {
+      width: 353px;
+      margin-left: -117px;
+      margin-top: 38px;
+      @include media-breakpoint-up(md) {
+        margin-left: -6px;
+        margin-top: -60px;
+      }
+      @include media-breakpoint-up(lg) {
+        margin-left: -102px;
+        margin-top: -183px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-left: -140px;
+        margin-top: -208px;
+      }
+      @include media-breakpoint-up(xxl) {
+        width: auto;
+        margin-left: -180px;
+        margin-top: -356px;
+      }
+    }
+    &--flr {
+      width: 340px;
+      right: 0;
+      left: inherit;
+      margin-top: 140px;
+      margin-right: -91px;
+      @include media-breakpoint-up(md) {
+        margin-top: 154px;
+        margin-right: -101px;
+      }
+      @include media-breakpoint-up(lg) {
+        display: none;
+      }
+    }
+    &--pb {
+      width: 378px;
+      margin-top: 138px;
+      margin-left: -204px;
+      @include media-breakpoint-up(md) {
+        margin-top: -50px;
+        margin-left: -186px;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 444px;
+        margin-top: 0;
+        margin-left: -285px;
+      }
+      @include media-breakpoint-up(xl) {
+        width: 512px;
+        margin-top: -60px;
+        margin-left: -245px;
+      }
+      @include media-breakpoint-up(xxl) {
+        width: 683px;
+        height: 830px;
+        margin-left: -202px;
+        margin-top: -10px;
+      }
+    }
+    &--pl {
+      width: 396px;
+      margin-left: 212px;
+      margin-top: 127px;
+      @include media-breakpoint-up(md) {
+        margin-top: 238px;
+      }
+      @include media-breakpoint-up(lg) {
+        margin-left: 287px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-left: 399px;
+        margin-top: 358px;
+      }
+      @include media-breakpoint-up(xxl) {
+        width: 588px;
+      }
+    }
+    &--pr {
+      width: 396px;
+      margin-left: 502px;
+      margin-top: 469px;
+      @include media-breakpoint-up(md) {
+        margin-top: 538px;
+      }
+      @include media-breakpoint-up(lg) {
+        left: inherit;
+        right: 0;
+        margin-left: 0;
+        margin-right: -329px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-right: -223px;
+        margin-top: 550px;
+      }
+      @include media-breakpoint-up(xxl) {
+        width: 588px;
+        margin-right: -393px;
+      }
+    }
+  }
+}
+
+.roll {
+  z-index: 5;
+  &__block {
+    position: relative;
+    height: 473px;
+    margin-bottom: 30px;
+    img {
+      position: absolute;
+    }
+    &-img1, &-img2 {
+      width: 57px;
+      z-index: 5;
+    }
+    &-img2 {
+      right: 0;
+    }
+    &-img3 {
+      z-index: 1;
+      width: 364px;
+      bottom: 10px;
+      margin-left: 45px;
+      height: 500px;
+      object-fit: cover;
+      object-position: left;
+    }
+  }
+  &__head {
+    max-width: 353px;
+    margin: 0 auto 15px;
+    text-align: center;
+  }
+  &__untitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  &__description {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-brown;
+    padding-left: 67px;
+    position: relative;
+    text-align: left;
+    br {
+      display: none
+    }
+    &::before {
+      content: '';
+      width: 42px;
+      height: 3px;
+      position: absolute;
+      left: 0;
+      top: 9px;
+      background: $color-brown;
+    }
+  }
+  &__content {
+    margin-bottom: 25px;
+  }
+  &__wrapper {
+    margin-top: -190px;
+    &-content {
+      text-align: center;
+    }
+    &-img {
+      display: none;
+      position: absolute;
+    }
+  }
+}
+
+.learn {
+  z-index: 10;
+}
+
+.what {
+  z-index: 15;
+}
+
+.history {
+  z-index: 20;
+}
+
+.facts {
+  z-index: 25;
+}
+
+.words {
+  z-index: 30;
+}
+
+.initiative {
+  z-index: 35;
+}
+
+.payment {
+  padding-bottom: 0;
+  z-index: 40;
+  &__form {
+    background: $color-white;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    padding: 30px 43px;
+    max-width: 598px;
+    margin: 0 auto;
+    @include media-breakpoint-up(lg) {
+      max-width: inherit;
+    }
+  }
+}

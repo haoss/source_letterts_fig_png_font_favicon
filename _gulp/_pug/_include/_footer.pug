@@ -1,29 +1,36 @@
 // Footer
 footer.footer
   .container
+    .letter
+      .letter__wrapper
+        img(src="./images/bg-letter/footer-letter-left.png", alt="").letter__img.letter__img--fll
+        img(src="./images/bg-letter/footer-letter-right.png", alt="").letter__img.letter__img--flr
     
-    .footer__wrapper
-      .footer__wrapper-left
-        p
-          b Религиозная организация ортодоксального иудаизма - Московская Марьинорощинская Еврейская Община 
-          br
-          span.font-weight-normal
-            | ОГРН 1027700564462 
-            br
-            | ИНН 7715000509 
-            br
-            | КПП 771501001 
-      .footer__wrapper-center
-        p
-          b Юридический адрес организации: 
-          br
-          | 127018, г. Москва 2-й Вышеславцев пер, д.5 А
-        p 
-          a(href="mailto:") sefertora@gmail.com
-          br
-          a(href="tel:") 0 800 987 654 321
-      .footer__wrapper-right
-        .footer__logos
-          img(src="./tmp/footer-logo-1.png", alt="").footer__logos--1
-          img(src="./tmp/footer-logo-2.png", alt="").footer__logos--2
+    .row
+      .col
+        .footer__wrapper
+          .footer__wrapper-left
+            p.footer__about
+              b Религиозная организация ортодоксального иудаизма - Московская Марьинорощинская Еврейская Община 
+              br
+              span.font-weight-normal
+                | ОГРН 1027700564462 
+                br
+                | ИНН 7715000509 
+                br
+                | КПП 771501001 
+          .footer__wrapper-center
+            p.footer__address
+              b Юридический адрес организации: 
+              br
+              | 127018, г. Москва 2-й Вышеславцев пер, д.5 А
+            p.footer__call
+              a(href="mailto:") sefertora@gmail.com
+              br
+              a(href="tel:")
+                strong 0 800 987 654 321
+          .footer__wrapper-right
+            .footer__logos
+              img(src="./tmp/footer-logo-1.png", alt="").footer__logos--1
+              img(src="./tmp/footer-logo-2.png", alt="").footer__logos--2
   

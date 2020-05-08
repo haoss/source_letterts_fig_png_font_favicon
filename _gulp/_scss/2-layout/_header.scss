@@ -1,12 +1,14 @@
 /* header */
 .header {
-  // background: linear-gradient(to right, #fff, #F6F6F6 40%);
   background: rgba($color-white,.8);
   position: fixed;
+  z-index: 150;
   top: 0;
   left: 0;
   right: 0;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(2px);
+  transition: all 0.35s;
   &__wrapper {
     height: 100px;
     display: flex;
@@ -15,15 +17,46 @@
   &__logo {
     flex-grow: 1;
     flex-shrink: 0;
+    margin-right: 40px;
   }
   &__nav {
     flex-grow: 1;
     display: none;
+    font-weight: 800;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-size: 0;
+    ul {
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+      li {
+        font-size: rem(16px);
+        list-style: none;
+        margin: 0;
+        display: inline-block;
+        &+li {
+          margin-left: 25px;
+        }
+        &>a, &>span {
+          height: 100px;
+          line-height: 106px;
+          display: block;
+        }
+      }
+    }
   }
   &__btn {
     flex-shrink: 0;
   }
   &-holder {
-    height: 103px;
+    height: 100px;
+  }
+  &.is-scroll {
+    background: rgba(255,255,255,.8);
+    .header__btn {
+      background: $color-brown;
+      color: $color-white;
+    }
   }
 }

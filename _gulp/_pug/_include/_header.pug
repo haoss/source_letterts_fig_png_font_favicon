@@ -4,12 +4,11 @@ header.header
     
     .header__wrapper
       .logo.header__logo
-        img(src="./images/logo.png", alt="")
+        a(href="#body").anchor
+          img(src="./images/logo.png", alt="")
       nav.nav.header__nav
         ul
-          li: a(href="#!") о проекте
-          li: a(href="#!") история
-      button(type="button").header__btn
+          li: a.anchor(href="#learn") о проекте
+          li: a.anchor(href="#history") история
+      a(href="#payment").btn.btn--sm.header__btn.anchor
         span Получить букву
-
-.header-holder

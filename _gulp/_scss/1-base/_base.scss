@@ -19,13 +19,24 @@ html, body {
 body {
   // background-color: alpha(var(--color-primary), 1);
   background: #F6F6F6;
-  // font-size: rem(18px);
   font-size: rem(16px);
   font-weight: 500;
   font-family: $font-muller;
   color: $primary-color;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
+  @include media-breakpoint-up(xxl) {
+    font-size: rem(18px);
+  }
+}
+
+.base {
+  overflow: hidden;
+  position: relative;
+  &__wrapper {
+    overflow: auto;
+    width: 100%;
+  }
 }
 
 //  Typography
@@ -43,6 +54,20 @@ body {
   // margin-bottom: 24px;
   margin-bottom: 15px;
   font-weight: 900;
+  @include media-breakpoint-up(md) {
+    font-size: rem(50px);
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: rem(60px);
+    margin-bottom: 20px;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: rem(80px);
+    margin-bottom: 25px;
+  }
+  @include media-breakpoint-up(xxl) {
+    font-size: rem(100px);
+  }
 }
 .h2, h2 {
   // font-size: rem(80px);
@@ -50,6 +75,18 @@ body {
   line-height: 1;
   margin-bottom: 20px;
   font-weight: 900;
+  @include media-breakpoint-up(md) {
+    font-size: rem(40px);
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: rem(50px);
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: rem(60px);
+  }
+  @include media-breakpoint-up(xxl) {
+    font-size: rem(80px);
+  }
 }
 .h3, h3 {
   font-size: rem(16px);
@@ -73,8 +110,10 @@ small, .small {
 
 p {
   line-height: 1.65;
-  // margin: 0 0 35px 0;
   margin: 0 0 25px 0;
+  @include media-breakpoint-up(xxl) {
+    margin: 0 0 35px 0;
+  }
 }
 
 em, i, .em, .i {
@@ -195,6 +234,7 @@ img, .img {
 .section {
   padding: 40px 0;
   min-width: 320px;
+  position: relative;
 }
 
 .container {

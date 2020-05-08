@@ -6,3 +6,34 @@ button {
     outline: none;
   }
 }
+
+.btn {
+  position: relative;
+  min-width: 327px;
+  min-height: 60px;
+  font-size: rem(17px);
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+  text-align: center;
+  background: $color-brown;
+  // background: url('../images/btn.svg') 0 0 no-repeat;
+  border-radius: 35px;
+  padding: 20px 10px 12px;
+  color: $color-white;
+  line-height: 1.5;
+  display: inline-block;
+  transition: all 0.35s;
+  &:hover {
+    text-decoration: none;
+    background: darken($color-brown, 10%);
+    color: $color-white;
+  }
+  &--sm {
+    min-height: 42px;
+    min-width: 232px;
+    font-size: rem(13px);
+    padding: 13px 10px 10px 10px;
+    margin: 3px;
+  }
+}
