@@ -24,16 +24,48 @@ button {
   line-height: 1.5;
   display: inline-block;
   transition: all 0.35s;
+  svg {
+    rect {
+      stroke: #d39c50;
+      stroke-width: 2;
+      &.path-animate {
+        stroke-dasharray: 120 620;
+        stroke-dashoffset: 0;
+        stroke-linecap: round;
+      }
+      &.path {
+        fill: #d39c50;
+      }
+    }
+  }
   &:hover {
     text-decoration: none;
     background: darken($color-brown, 10%);
     color: $color-white;
+  }
+  &:active, &:focus {
+    text-decoration: none;
   }
   &--sm {
     min-height: 42px;
     min-width: 232px;
     font-size: rem(13px);
     padding: 13px 10px 10px 10px;
-    margin: 3px;
+  }
+  &--svg {
+    padding: 0;
+    background: none;
+    &:hover {
+      background: none;
+    }
+    svg {
+      &+span {
+        position: absolute;
+        left: 0;
+        top: calc(50% + 2px);
+        width: 100%;
+        transform: translateY(-50%);
+      }
+    }
   }
 }

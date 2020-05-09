@@ -87,6 +87,16 @@ body {
   @include media-breakpoint-up(xxl) {
     font-size: rem(80px);
   }
+  small {
+    font-size: rem(22px);
+    @include media-breakpoint-up(lg) {
+      font-size: rem(30px);
+      line-height: 1.6;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: rem(40px);
+    }
+  }
 }
 .h3, h3 {
   font-size: rem(16px);
@@ -165,19 +175,6 @@ img, .img {
   padding: 0 15px;
 }
 
-/* text align */
-.text {
-  &-center, &--center {
-    text-align: center !important;
-  }
-  &-left, &--left {
-    text-align: left !important;
-  }
-  &-right, &--right {
-    text-align: right !important;
-  }
-}
-
 /* loader */
 .loader {
   width: 100%;
@@ -248,19 +245,6 @@ ul li {
 }
 ol li {
   list-style-type: decimal;
-}
-
-/* bg */
-.bg {
-  &--pink {
-    background-color: pink !important;
-  }
-  &--white {
-    background-color: $color-white !important;
-  }
-  &--black {
-    background-color: $color-black !important;
-  }
 }
 
 /* no padding no margin */

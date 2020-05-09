@@ -48,58 +48,138 @@ html(lang="ru")
                           .roll__description Получите букву в Торе и 
                             br
                             | духовный щит для себя и своих близких
-                      a(href="#payment").btn.anchor
+                      a(href="#payment").btn.btn--svg.anchor
+                        svg(xmlns='http://www.w3.org/2000/svg' fill='none' version='1.1' viewBox='0 0 336.9 69.6')
+                          g(transform='translate(4 -29.7)')
+                            rect.path-animate(width='334.9' height='67.6' x='-3.1' y='30.7' rx='33.8')
+                          rect.path(width='325' height='58' x='6' y='5.8' rx='29')
                         span Получить букву
 
           // Section
           section.section.learn#learn
             .container
 
+              .letter
+                .letter__wrapper
+                  img(src="./images/bg-letter/letter.png", alt="").letter__img.letter__img--ll
+                  img(src="./images/bg-letter/letter.png", alt="").letter__img.letter__img--lr
+                  img(src="./images/bg-letter/letter-y.png", alt="").letter__img.letter__img--lb
+
               .row
                 .col
-                  .content__head
+                  .content__head.learn__head
                     h2 Узнать больше о проекте
+                  .content__untitle Свиток Торы русскоязычных евреев
+
+                  // Video
+                  .video
+                    .video__img
+                      img(src="./tmp/letter-img.png", alt="").img-fluid
+                    .video__block
+                      a(href="https://www.youtube.com/watch?v=dtimHvmRfPU").popup-youtube.video__play.learn__video
+                        img(src="./images/icon-play.svg", alt="")
+
 
           // Section
           section.section.what
             .container
+
+              .letter
+                .letter__wrapper
+                  img(src="./images/bg-letter/letter-k.png", alt="").letter__img.letter__img--wb
 
               .row
                 .col
                   .content__head
                     h2 Что такое Тора?
                   
-                  p Евреев часто называют «народ Книги». Такая характеристика всегда воспринимается как весьма лестная, и евреи часто гордятся тем, что они «народ Книги».
-                  p Книга, о которой идет речь, легла в основу своеобразного «бестселлера» всех времен и народов. Около шести миллиардов изданных экземпляров, среднегодовой объем продаж примерно в сто миллионов копий, переводы на свыше двух тысяч языков мира… Божественная мудрость текста, данного евреям у горы Синай, служит источником духовности для всего мира.
-                  p Тора, что в переводе с иврита означает «учение», — это та Книга, которая создала наш народ, ведет и хранит его на протяжении веков. Наши мудрецы говорят о ней как о духовной карте мироздания, указывающей направление на единение со Всевышним.
-                  p Тора устанавливает нормы поведения человека, определяющие его поступки, она показывает человеку цель, к которой он должен стремиться в своем духовном и физическом развитии.
+                  .what__content
+                    .what__content-wrapper
+                      p Евреев часто называют «народ Книги». Такая характеристика всегда воспринимается как весьма лестная, и евреи часто гордятся тем, что они «народ Книги».
+                      p Книга, о которой идет речь, легла в основу своеобразного «бестселлера» всех времен и народов. Около шести миллиардов изданных экземпляров, среднегодовой объем продаж примерно в сто миллионов копий, переводы на свыше двух тысяч языков мира… Божественная мудрость текста, данного евреям у горы Синай, служит источником духовности для всего мира.
+                      p Тора, что в переводе с иврита означает «учение», — это та Книга, которая создала наш народ, ведет и хранит его на протяжении веков. Наши мудрецы говорят о ней как о духовной карте мироздания, указывающей направление на единение со Всевышним.
+                      p Тора устанавливает нормы поведения человека, определяющие его поступки, она показывает человеку цель, к которой он должен стремиться в своем духовном и физическом развитии.
+                      p Существует распространенное мнение, что еврейские книги предназначены исключительно для изучения в специальных учебных заведениях и что читать их должен только раввин. Это мнение является глубоко ошибочным (как и большинство распространенных мнений о еврействе). Фраза «Тора дана народу Израиля» означает, что Тора дана не только еврейскому народу как коллективу, но и каждому еврею, вне зависимости от его статуса. Поэтому Тора – наследие не только еврейского народа целиком, но и каждого конкретного еврея. Это подарок, врученный каждому еврею лично Творцом мира. Это его наследие, которое он должен передать своим детям.
+                      p Любавичский Ребе пишет: «При получении Торы должен быть учтен каждый еврей, поскольку у каждого есть свой удел в святой Торе, дарованной Всевышним, и его душа связана с ней. Ни один еврей не должен быть забыт или «потерян».
+                      p Выражение «народ Книги» можно понимать двояко – «народ, которому принадлежит Книга» или «народ, который принадлежит Книге». Оба эти значения слиты воедино в еврейском народе – евреи верны Слову Всевышнего, а Тора принадлежит народу Израиля.
+                    button(type="button").what__content-link
+                      img(src="./images/icon-read.svg", alt="")
+                      span Читать далее
 
           // Section
           section.section.history#history
             .container
 
+              .letter
+                .letter__wrapper
+                  img(src="./images/bg-letter/letter-ru.png", alt="").letter__img.letter__img--hl
+                  img(src="./images/bg-letter/letter-v.png", alt="").letter__img.letter__img--hb
+
               .row
                 .col
-                  .content__head
-                    h2 История возникновения обычая
+                  .history__wrapper
+                    .history__wrapper-content
+                      .content__head.history__head
+                        h2 История 
+                          br
+                          | возникновения обычая
+
+                      p Во времена рабби Исраэля Бааль Шем Това в местечке Меджибож произошла вспышка чумы. Мужчины, женщины и дети заболевали и умирали один за другим от этой болезни. В отчаянии лидеры общины обратились к Баал Шем Тову и попросили его от имени общины сказать, как остановить эпидемию. Баал Шем Тов ответил, что отмена небесного приговора – не в его, а в их руках. 
+                      p Баал Шем Тов посоветовал написать новый свиток Торы усилиями всех членов общины, тем самым как бы объединяя их в этом священном свитке. Община немедленно взялась за это, и Баал Шем Тов поручил своему сойферу начать писать эту Тору Единства. И, как ни удивительно, вскоре, в общину пришло исцеление.
+                    .history__wrapper-img
+                      .history__img
+                        img(src="./tmp/history-img.png", alt="").img-fluid
 
           // Section
           section.section.facts
             .container
 
+              .letter
+                .letter__wrapper
+                  img(src="./images/bg-letter/letter.png", alt="").letter__img.letter__img--fl
+                  img(src="./images/bg-letter/letter-a.png", alt="").letter__img.letter__img--fb
+                  img(src="./images/bg-letter/letter-t.png", alt="").letter__img.letter__img--fb2
+
               .row
                 .col
-                  .content__head
+                  .content__head.facts__head
                     h2 Интересные факты о Торе
+
+                  .facts__carousel
+                    div
+                      .facts__block Тора самая святая книга в иудаизме, ее дал Всевышний народу Израиля через Моше
+                    div
+                      .facts__block Тора самая святая книга в иудаизме
+                    div
+                      .facts__block Тора самая святая книга в иудаизме, ее дал Всевышний народу Израиля через Моше
+                    div
+                      .facts__block Всевышний народу Израиля через Моше
 
           // Section
           section.section.words
             .container
 
+              .letter
+                .letter__wrapper
+                  img(src="./images/bg-letter/letter-o.png", alt="").letter__img.letter__img--wrb
+
               .row
                 .col
-                  .content__head
-                    h2 Слова Ребе о важности иметь букву в свитке Торы
+
+                  .words__wrapper
+                    .words__wrapper-head
+                      .content__head.words__head
+                        h2 Слова Ребе 
+                          br
+                          small о важности иметь букву в свитке Торы
+                    .words__wrapper-video
+                      // Video
+                      .video.video--words
+                        .video__img
+                          img(src="./tmp/words-img.png", alt="").img-fluid
+                        .video__block
+                          a(href="https://www.youtube.com/watch?v=dtimHvmRfPU").popup-youtube.video__play.words__video
+                            img(src="./images/icon-play.svg", alt="")
 
           // Section
           section.section.initiative
