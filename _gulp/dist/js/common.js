@@ -94,24 +94,35 @@ $(document).on('ready', function(){
 
   headerScroll();
   readMoreContent();
-
-  // Chrome Smooth Scroll
-  try {
-    $.browserSelector();
-    if($("html").hasClass("chrome")) {
-      $.smoothScroll();
-    }
-  } catch(err) {
-
-  };
+  formLetter();
 
   // simpleForm version 2015-09-23 14:30 GMT +2
   simpleForm('form.form-callback');
 });
 
 $(window).on('load', function() {
-  $(".loader").delay(400).fadeOut("slow");
+  $(".loader").delay(100).fadeOut("slow", animatedLanding());
 });
+
+function animatedLanding(){
+  var tl = gsap.timeline();
+  tl
+    .from('.roll__wrapper-img', {duration: 2, opacity: 0}, 'first')
+    .from('.header__btn', {duration: 1, y: -50, opacity: 0}, 'first')
+    .from('.roll__btn', {duration: 1, y: 100, opacity: 0}, 'first')
+    .from('.roll__block', {duration: 1, top: '-100%', opacity: 0}, 'first')
+    .from('.roll__block', {duration: 1.5, width: 163, transform: 'translateX(50%)'}, '-=1')
+    .set('.roll__block', {className:"+=roll__block is-roll"})
+    .fromTo('.roll__content-wrapper', {clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)'}, {duration: 1.5, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)'}, 'first')
+  ;
+
+  var width = $(window).width();
+
+  if (width < 1600) {
+    tl.kill();
+    gsap.set('*', {clearProps:"all"});
+  }
+}
 
 $(window).on('scroll', function() {
   headerScroll();
@@ -206,4 +217,45 @@ function readMoreContent() {
       block.addClass('is-active')
     }
   });
+}
+
+function formLetter() {
+  var form = $('.payment__add'),
+      btnAddLetter = form.find('.payment__add-btn'),
+      letter = $('.payment__add-block'),
+      formWrapper = form.find('.payment__add-wrapper'),
+      formArray = [0,1,2]
+  ;
+
+  $(document).on('click', '.payment__block-remove', function() {
+    formArray.pop();
+    $(this).parent().remove();
+  });
+
+  btnAddLetter.on('click', function(){
+    var number = formArray.length - 1;
+    formArray.push(number + 1);
+    var block = `<div class="payment__add-block">
+        <button class="payment__block-remove" type="button">Удалить</button>
+        <div class="payment__block-title">Буква <span>${formArray.length}</span> для</div>
+        <div class="payment__block-wrapper">
+            <div class="div1">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="letter-name-${formArray.length}" placeholder="Ваше имя">
+                </div>
+            </div>
+            <div class="div2">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="letter-lastname-${formArray.length}" placeholder="Фамилия">
+                </div>
+            </div>
+            <div class="div3">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="letter-mother-${formArray.length}" placeholder="Имя матери">
+                </div>
+            </div>
+        </div>
+    </div>`
+    formWrapper.append(block);
+  });  
 }

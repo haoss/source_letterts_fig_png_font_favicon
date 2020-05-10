@@ -25,6 +25,13 @@
         <div class="base">
             <div class="base__wrapper">
                 <!-- Preloader-->
+                <div class="loader">
+                    <div class="bouncing-loader">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
                 <!-- Header-->
                 <header class="header">
                     <div class="container">
@@ -57,18 +64,18 @@
                                 <div class="col">
                                     <div class="roll__wrapper">
                                         <div class="roll__wrapper-right"><img class="roll__wrapper-img" src="./images/bg-roll.png" alt="">
-                                            <div class="roll__block"><img class="roll__block-img1" src="./images/roll-left.png" alt=""><img class="roll__block-img2" src="./images/roll-right.png" alt=""><img class="roll__block-img3" src="./images/roll-center.png" alt=""></div>
+                                            <div class="roll__block"><img class="roll__block-img1" src="./images/roll-left.png" alt=""><img class="roll__block-img2" src="./images/roll-right.png" alt=""><img class="roll__block-img3" src="./images/sp.gif" alt=""></div>
                                         </div>
                                         <div class="roll__wrapper-content">
                                             <div class="roll__content">
-                                                <div class="roll__content-wraper">
+                                                <div class="roll__content-wrapper">
                                                     <div class="roll__head">
                                                         <h1>Уникальный проект </h1>
                                                     </div>
                                                     <div class="roll__untitle">Свиток Торы русскоязычных евреев</div>
                                                     <div class="roll__description">Получите букву в Торе и <br>духовный щит для себя и своих близких</div>
                                                 </div>
-                                            </div><a class="btn btn--svg anchor" href="#payment">
+                                            </div><a class="btn btn--svg roll__btn anchor" href="#payment">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" version="1.1" viewBox="0 0 336.9 69.6">
                                                     <g transform="translate(4 -29.7)">
                                                         <rect class="path-animate" width="334.9" height="67.6" x="-3.1" y="30.7" rx="33.8"></rect>
@@ -85,7 +92,7 @@
                     <section class="section learn" id="learn">
                         <div class="container">
                             <div class="letter">
-                                <div class="letter__wrapper"><img class="letter__img letter__img--ll" src="./images/bg-letter/letter.png" alt=""><img class="letter__img letter__img--lr" src="./images/bg-letter/letter.png" alt=""><img class="letter__img letter__img--lb" src="./images/bg-letter/letter-y.png" alt=""></div>
+                                <div class="letter__wrapper"><img class="lazyload letter__img letter__img--ll" data-src="./images/bg-letter/letter.png" alt=""><img class="lazyload letter__img letter__img--lr" data-src="./images/bg-letter/letter.png" alt=""><img class="lazyload letter__img letter__img--lb" data-src="./images/bg-letter/letter-y.png" alt=""></div>
                             </div>
                             <div class="row">
                                 <div class="col">
@@ -95,7 +102,7 @@
                                     <div class="content__untitle">Свиток Торы русскоязычных евреев</div>
                                     <!-- Video-->
                                     <div class="video">
-                                        <div class="video__img"><img class="img-fluid" src="./tmp/letter-img.png" alt=""></div>
+                                        <div class="video__img"><img class="lazyload img-fluid" data-src="./tmp/letter-img.png" alt=""></div>
                                         <div class="video__block"><a class="popup-youtube video__play learn__video" href="https://www.youtube.com/watch?v=dtimHvmRfPU"><img src="./images/icon-play.svg" alt=""></a></div>
                                     </div>
                                 </div>
@@ -106,7 +113,7 @@
                     <section class="section what">
                         <div class="container">
                             <div class="letter">
-                                <div class="letter__wrapper"><img class="letter__img letter__img--wb" src="./images/bg-letter/letter-k.png" alt=""></div>
+                                <div class="letter__wrapper"><img class="lazyload letter__img letter__img--wb" data-src="./images/bg-letter/letter-k.png" alt=""></div>
                             </div>
                             <div class="row">
                                 <div class="col">
@@ -133,7 +140,7 @@
                     <section class="section history" id="history">
                         <div class="container">
                             <div class="letter">
-                                <div class="letter__wrapper"><img class="letter__img letter__img--hl" src="./images/bg-letter/letter-ru.png" alt=""><img class="letter__img letter__img--hb" src="./images/bg-letter/letter-v.png" alt=""></div>
+                                <div class="letter__wrapper"><img class="lazyload letter__img letter__img--hl" data-src="./images/bg-letter/letter-ru.png" alt=""><img class="lazyload letter__img letter__img--hb" data-src="./images/bg-letter/letter-v.png" alt=""></div>
                             </div>
                             <div class="row">
                                 <div class="col">
@@ -146,7 +153,7 @@
                                             <p>Баал Шем Тов посоветовал написать новый свиток Торы усилиями всех членов общины, тем самым как бы объединяя их в этом священном свитке. Община немедленно взялась за это, и Баал Шем Тов поручил своему сойферу начать писать эту Тору Единства. И, как ни удивительно, вскоре, в общину пришло исцеление.</p>
                                         </div>
                                         <div class="history__wrapper-img">
-                                            <div class="history__img"><img class="img-fluid" src="./tmp/history-img.png" alt=""></div>
+                                            <div class="history__img"><img class="lazyload img-fluid" data-src="./tmp/history-img.png" alt=""></div>
                                         </div>
                                     </div>
                                 </div>
@@ -157,7 +164,7 @@
                     <section class="section facts">
                         <div class="container">
                             <div class="letter">
-                                <div class="letter__wrapper"><img class="letter__img letter__img--fl" src="./images/bg-letter/letter.png" alt=""><img class="letter__img letter__img--fb" src="./images/bg-letter/letter-a.png" alt=""><img class="letter__img letter__img--fb2" src="./images/bg-letter/letter-t.png" alt=""></div>
+                                <div class="letter__wrapper"><img class="lazyload letter__img letter__img--fl" data-src="./images/bg-letter/letter.png" alt=""><img class="lazyload letter__img letter__img--fb" data-src="./images/bg-letter/letter-a.png" alt=""><img class="lazyload letter__img letter__img--fb2" data-src="./images/bg-letter/letter-t.png" alt=""></div>
                             </div>
                             <div class="row">
                                 <div class="col">
@@ -186,7 +193,7 @@
                     <section class="section words">
                         <div class="container">
                             <div class="letter">
-                                <div class="letter__wrapper"><img class="letter__img letter__img--wrb" src="./images/bg-letter/letter-o.png" alt=""></div>
+                                <div class="letter__wrapper"><img class="lazyload letter__img letter__img--wrb" data-src="./images/bg-letter/letter-o.png" alt=""></div>
                             </div>
                             <div class="row">
                                 <div class="col">
@@ -199,7 +206,7 @@
                                         <div class="words__wrapper-video">
                                             <!-- Video-->
                                             <div class="video video--words">
-                                                <div class="video__img"><img class="img-fluid" src="./tmp/words-img.png" alt=""></div>
+                                                <div class="video__img"><img class="lazyload img-fluid" data-src="./tmp/words-img.png" alt=""></div>
                                                 <div class="video__block"><a class="popup-youtube video__play words__video" href="https://www.youtube.com/watch?v=dtimHvmRfPU"><img src="./images/icon-play.svg" alt=""></a></div>
                                             </div>
                                         </div>
@@ -211,33 +218,237 @@
                     <!-- Section-->
                     <section class="section initiative">
                         <div class="container">
+                            <div class="letter">
+                                <div class="letter__wrapper"><img class="lazyload letter__img letter__img--ib" data-src="./images/bg-letter/letter-p.png" alt=""><img class="lazyload letter__img letter__img--il" data-src="./images/bg-letter/letter.png" alt=""><img class="lazyload letter__img letter__img--ir" data-src="./images/bg-letter/letter.png" alt=""></div>
+                            </div>
                             <div class="row">
                                 <div class="col">
-                                    <div class="content__head">
-                                        <h2>Благородная инициатива</h2>
+                                    <div class="initiative__wrapper">
+                                        <div class="initiative__wrapper-left">
+                                            <div class="content__head initiative__head">
+                                                <h2>Благородная инициатива</h2>
+                                            </div>
+                                            <p>В свете распространения короновируса во всем мире и по инициативе главного раввина России Берл Лазара мы начали подобную инициативу, чтобы объединить всех русскоязычных евреев мира в этом свитке. Свиток Торы в настоящее время пишется, и у вас есть возможность принять в этом участие. </p>
+                                            <div class="d-none d-xl-block">
+                                                <div class="initiative__description">“ Мы должны начать действовать. Купите букву сейчас – себе и всем своим близким! Давайте объединимся в написании этого свитка и в наших молитвах! “</div><a class="btn btn--svg anchor" href="#payment">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" version="1.1" viewBox="0 0 336.9 69.6">
+                                                        <g transform="translate(4 -29.7)">
+                                                            <rect class="path-animate" width="334.9" height="67.6" x="-3.1" y="30.7" rx="33.8"></rect>
+                                                        </g>
+                                                        <rect class="path" width="325" height="58" x="6" y="5.8" rx="29"></rect>
+                                                    </svg><span>Получить букву</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="initiative__wrapper-img">
+                                            <div class="initiative__img"><img class="lazyload" data-src="./tmp/initiative-img.png" alt=""></div>
+                                        </div>
+                                        <div class="initiative__wrapper-content d-xl-none">
+                                            <div class="initiative__description">“ Мы должны начать действовать. Купите букву сейчас – себе и всем своим близким! Давайте объединимся в написании этого свитка и в наших молитвах! “</div><a class="btn btn--svg initiative__btn anchor" href="#payment">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" version="1.1" viewBox="0 0 336.9 69.6">
+                                                    <g transform="translate(4 -29.7)">
+                                                        <rect class="path-animate" width="334.9" height="67.6" x="-3.1" y="30.7" rx="33.8"></rect>
+                                                    </g>
+                                                    <rect class="path" width="325" height="58" x="6" y="5.8" rx="29"></rect>
+                                                </svg><span>Получить букву</span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
                     <!-- Section-->
-                    <section class="section payment" id="payment">
+                    <div class="section payment" id="payment">
                         <div class="container">
+                            <div class="letter">
+                                <div class="letter__wrapper"><img class="lazyload letter__img letter__img--pyb" data-src="./images/bg-letter/letter-a.png" alt=""></div>
+                            </div>
                             <div class="row">
                                 <div class="col">
+                                    <div class="payment__top">
+                                        <div class="payment__top-info">В 1 свитке Торы - <strong>304 805 букв</strong></div>
+                                        <div class="payment__top-description">Поспешите приобрести букву в Торе и <strong>духовный щит для себя и своих близких</strong></div>
+                                    </div>
                                     <div class="payment__form">
-                                        <div class="h3">Платежная информация</div>
+                                        <form action="#!">
+                                            <div class="payment__wrapper">
+                                                <div class="payment__wrapper-content">
+                                                    <legend>Платежная информация</legend>
+                                                    <fieldset>
+                                                        <div class="payment__form-fields">
+                                                            <div class="div1">
+                                                                <div class="form-group">
+                                                                    <input class="form-control" type="text" name="name" placeholder="Имя и Фамилия">
+                                                                </div>
+                                                            </div>
+                                                            <div class="div2">
+                                                                <div class="form-group">
+                                                                    <input class="form-control" type="text" name="city" placeholder="Город">
+                                                                </div>
+                                                            </div>
+                                                            <div class="div3">
+                                                                <div class="form-group">
+                                                                    <input class="form-control" type="text" name="phone" placeholder="Телефон">
+                                                                </div>
+                                                            </div>
+                                                            <div class="div4">
+                                                                <div class="form-group">
+                                                                    <input class="form-control" type="text" name="email" placeholder="Email">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment__form-info">Рекомендуемый размер пожертвований: <strong>1 000 000 рублей</strong></div>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <div class="payment__form-donate">
+                                                            <div class="div1">
+                                                                <div class="payment__form-head b">Пожертвовать</div>
+                                                            </div>
+                                                            <div class="div2">
+                                                                <div class="form-group">
+                                                                    <label class="label-donate">
+                                                                        <input type="radio" name="donate" checked><span>100</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="div3">
+                                                                <div class="form-group">
+                                                                    <label class="label-donate">
+                                                                        <input type="radio" name="donate"><span>500</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="div4">
+                                                                <div class="form-group">
+                                                                    <label class="label-donate">
+                                                                        <input type="radio" name="donate"><span>1000</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="div5">
+                                                                <div class="form-group">
+                                                                    <input class="form-control" type="text" name="donate-custom" placeholder="Своя сумма">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <div class="form-group">
+                                                            <label class="label-checkbox">
+                                                                <input type="checkbox" name="checkbox1">
+                                                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path class="checkbox-path1" d="M16.0809 2.77965L14.9034 1.60211C14.7764 1.47508 14.5705 1.47508 14.4434 1.60211L8.38378 7.66143L6.22207 5.49988C6.09505 5.37286 5.88914 5.37286 5.76211 5.49988L4.58457 6.67743C4.52358 6.73842 4.48926 6.82121 4.48926 6.90741C4.48926 6.99361 4.52358 7.0764 4.58457 7.13739L8.1538 10.7063C8.2174 10.7699 8.30051 10.8016 8.38378 10.8016C8.46722 10.8016 8.55001 10.7699 8.61376 10.7063L16.0808 3.23961C16.1418 3.17862 16.1761 3.09583 16.1761 3.00963C16.1761 2.92343 16.1419 2.84064 16.0809 2.77965Z"></path>
+                                                                    <path class="checkbox-path2" d="M12.1441 12.1907H1.80272V1.8491H12.3906L13.7706 0.547946C13.7706 0.368386 13.6249 0.222656 13.4453 0.222656H0.501559C0.321999 0.222656 0.17627 0.368386 0.17627 0.547946V13.4919C0.17627 13.6714 0.321999 13.8171 0.501559 13.8171H13.4455C13.6252 13.8171 13.7708 13.6714 13.7708 13.4919V7.33088L12.1443 9.03864L12.1441 12.1907Z"></path>
+                                                                </svg><span>У меня нет возможности сделать пожертвование</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="label-checkbox">
+                                                                <input type="checkbox" name="checkbox2" checked>
+                                                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path class="checkbox-path1" d="M16.0809 2.77965L14.9034 1.60211C14.7764 1.47508 14.5705 1.47508 14.4434 1.60211L8.38378 7.66143L6.22207 5.49988C6.09505 5.37286 5.88914 5.37286 5.76211 5.49988L4.58457 6.67743C4.52358 6.73842 4.48926 6.82121 4.48926 6.90741C4.48926 6.99361 4.52358 7.0764 4.58457 7.13739L8.1538 10.7063C8.2174 10.7699 8.30051 10.8016 8.38378 10.8016C8.46722 10.8016 8.55001 10.7699 8.61376 10.7063L16.0808 3.23961C16.1418 3.17862 16.1761 3.09583 16.1761 3.00963C16.1761 2.92343 16.1419 2.84064 16.0809 2.77965Z"></path>
+                                                                    <path class="checkbox-path2" d="M12.1441 12.1907H1.80272V1.8491H12.3906L13.7706 0.547946C13.7706 0.368386 13.6249 0.222656 13.4453 0.222656H0.501559C0.321999 0.222656 0.17627 0.368386 0.17627 0.547946V13.4919C0.17627 13.6714 0.321999 13.8171 0.501559 13.8171H13.4455C13.6252 13.8171 13.7708 13.6714 13.7708 13.4919V7.33088L12.1443 9.03864L12.1441 12.1907Z"></path>
+                                                                </svg><span>Согласен с <a href="#!" target="_blank">условиями обработки персональных данных</a></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="payment__form-footer">
+                                                            <div class="div1">
+                                                                <button class="btn btn--svg payment__btn anchor" type="submit">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" version="1.1" viewBox="0 0 336.9 69.6">
+                                                                        <g transform="translate(4 -29.7)">
+                                                                            <rect class="path-animate" width="334.9" height="67.6" x="-3.1" y="30.7" rx="33.8"></rect>
+                                                                        </g>
+                                                                        <rect class="path" width="325" height="58" x="6" y="5.8" rx="29"></rect>
+                                                                    </svg><span>Получить букву</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="div2">
+                                                                <div class="payment__sertificate"> <img src="./images/icon-page.svg" alt=""><span>После оформления, сертификат о покупке буквы, отправляется на почту</span></div>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="payment__wrapper-form">
+                                                    <div class="payment__add">
+                                                        <div class="payment__add-wrapper">
+                                                            <div class="payment__add-block">
+                                                                <div class="payment__block-title">Буква <span>1 </span>для</div>
+                                                                <div class="payment__block-wrapper">
+                                                                    <div class="div1">
+                                                                        <div class="form-group">
+                                                                            <input class="form-control" type="text" name="letter-name-1" placeholder="Ваше имя">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="div2">
+                                                                        <div class="form-group">
+                                                                            <input class="form-control" type="text" name="letter-lastname-1" placeholder="Фамилия">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="div3">
+                                                                        <div class="form-group">
+                                                                            <input class="form-control" type="text" name="letter-mother-1" placeholder="Имя матери">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="payment__add-block">
+                                                                <button class="payment__block-remove" type="button">Удалить</button>
+                                                                <div class="payment__block-title">Буква <span>2 </span>для</div>
+                                                                <div class="payment__block-wrapper">
+                                                                    <div class="div1">
+                                                                        <div class="form-group">
+                                                                            <input class="form-control" type="text" name="letter-name-2" placeholder="Ваше имя">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="div2">
+                                                                        <div class="form-group">
+                                                                            <input class="form-control" type="text" name="letter-lastname-2" placeholder="Фамилия">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="div3">
+                                                                        <div class="form-group">
+                                                                            <input class="form-control" type="text" name="letter-mother-2" placeholder="Имя матери">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="payment__add-block">
+                                                                <button class="payment__block-remove" type="button">Удалить</button>
+                                                                <div class="payment__block-title">Буква <span>3 </span>для</div>
+                                                                <div class="payment__block-wrapper">
+                                                                    <div class="div1">
+                                                                        <div class="form-group">
+                                                                            <input class="form-control" type="text" name="letter-name-3" placeholder="Ваше имя">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="div2">
+                                                                        <div class="form-group">
+                                                                            <input class="form-control" type="text" name="letter-lastname-3" placeholder="Фамилия">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="div3">
+                                                                        <div class="form-group">
+                                                                            <input class="form-control" type="text" name="letter-mother-3" placeholder="Имя матери">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button class="payment__add-btn" type="button">Добавить еще одну букву</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </main>
                 <!-- Footer-->
                 <footer class="footer">
                     <div class="container">
                         <div class="letter">
-                            <div class="letter__wrapper"><img class="letter__img letter__img--fll" src="./images/bg-letter/footer-letter-left.png" alt=""><img class="letter__img letter__img--flr" src="./images/bg-letter/footer-letter-right.png" alt=""></div>
+                            <div class="letter__wrapper"><img class="lazyload letter__img letter__img--fll" data-src="./images/bg-letter/footer-letter-left.png" alt=""><img class="lazyload letter__img letter__img--flr" data-src="./images/bg-letter/footer-letter-right.png" alt=""></div>
                         </div>
                         <div class="row">
                             <div class="col">
@@ -250,14 +461,13 @@
                                         <p class="footer__call"><a href="mailto:">sefertora@gmail.com</a><br><a href="tel:"><strong>0 800 987 654 321</strong></a></p>
                                     </div>
                                     <div class="footer__wrapper-right">
-                                        <div class="footer__logos"><img class="footer__logos--1" src="./tmp/footer-logo-1.png" alt=""><img class="footer__logos--2" src="./tmp/footer-logo-2.png" alt=""></div>
+                                        <div class="footer__logos"><img class="lazyload footer__logos--1" data-src="./tmp/footer-logo-1.png" alt=""><img class="lazyload footer__logos--2" data-src="./tmp/footer-logo-2.png" alt=""></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </footer>
-                <div style="height: 1000px; background-color: #000"></div>
             </div>
         </div>
         <!-- Load Scripts-->
@@ -267,7 +477,9 @@
         <script src="./js/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
         <script src="./js/libs/jquery.malihu.PageScroll2id.min.js"></script>
         <script src="./js/libs/slick/slick.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+        <script src="./js/libs/anime.min.js"></script>
+        <script src="./js/libs/lazysizes.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
         <script src="./js/common.js"></script>
     </body>
 </html>

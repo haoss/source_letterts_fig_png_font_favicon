@@ -38,17 +38,17 @@ html(lang="ru")
                       .roll__block
                         img(src="./images/roll-left.png", alt="").roll__block-img1
                         img(src="./images/roll-right.png", alt="").roll__block-img2
-                        img(src="./images/roll-center.png", alt="").roll__block-img3
+                        img(src="./images/sp.gif", alt="").roll__block-img3
                     .roll__wrapper-content
                       .roll__content
-                        .roll__content-wraper
+                        .roll__content-wrapper
                           .roll__head
                             h1 Уникальный проект 
                           .roll__untitle Свиток Торы русскоязычных евреев
                           .roll__description Получите букву в Торе и 
                             br
                             | духовный щит для себя и своих близких
-                      a(href="#payment").btn.btn--svg.anchor
+                      a(href="#payment").btn.btn--svg.roll__btn.anchor
                         svg(xmlns='http://www.w3.org/2000/svg' fill='none' version='1.1' viewBox='0 0 336.9 69.6')
                           g(transform='translate(4 -29.7)')
                             rect.path-animate(width='334.9' height='67.6' x='-3.1' y='30.7' rx='33.8')
@@ -61,9 +61,9 @@ html(lang="ru")
 
               .letter
                 .letter__wrapper
-                  img(src="./images/bg-letter/letter.png", alt="").letter__img.letter__img--ll
-                  img(src="./images/bg-letter/letter.png", alt="").letter__img.letter__img--lr
-                  img(src="./images/bg-letter/letter-y.png", alt="").letter__img.letter__img--lb
+                  img(data-src="./images/bg-letter/letter.png", alt="").lazyload.letter__img.letter__img--ll
+                  img(data-src="./images/bg-letter/letter.png", alt="").lazyload.letter__img.letter__img--lr
+                  img(data-src="./images/bg-letter/letter-y.png", alt="").lazyload.letter__img.letter__img--lb
 
               .row
                 .col
@@ -74,7 +74,7 @@ html(lang="ru")
                   // Video
                   .video
                     .video__img
-                      img(src="./tmp/letter-img.png", alt="").img-fluid
+                      img(data-src="./tmp/letter-img.png", alt="").lazyload.img-fluid
                     .video__block
                       a(href="https://www.youtube.com/watch?v=dtimHvmRfPU").popup-youtube.video__play.learn__video
                         img(src="./images/icon-play.svg", alt="")
@@ -86,7 +86,7 @@ html(lang="ru")
 
               .letter
                 .letter__wrapper
-                  img(src="./images/bg-letter/letter-k.png", alt="").letter__img.letter__img--wb
+                  img(data-src="./images/bg-letter/letter-k.png", alt="").lazyload.letter__img.letter__img--wb
 
               .row
                 .col
@@ -112,8 +112,8 @@ html(lang="ru")
 
               .letter
                 .letter__wrapper
-                  img(src="./images/bg-letter/letter-ru.png", alt="").letter__img.letter__img--hl
-                  img(src="./images/bg-letter/letter-v.png", alt="").letter__img.letter__img--hb
+                  img(data-src="./images/bg-letter/letter-ru.png", alt="").lazyload.letter__img.letter__img--hl
+                  img(data-src="./images/bg-letter/letter-v.png", alt="").lazyload.letter__img.letter__img--hb
 
               .row
                 .col
@@ -128,7 +128,7 @@ html(lang="ru")
                       p Баал Шем Тов посоветовал написать новый свиток Торы усилиями всех членов общины, тем самым как бы объединяя их в этом священном свитке. Община немедленно взялась за это, и Баал Шем Тов поручил своему сойферу начать писать эту Тору Единства. И, как ни удивительно, вскоре, в общину пришло исцеление.
                     .history__wrapper-img
                       .history__img
-                        img(src="./tmp/history-img.png", alt="").img-fluid
+                        img(data-src="./tmp/history-img.png", alt="").lazyload.img-fluid
 
           // Section
           section.section.facts
@@ -136,9 +136,9 @@ html(lang="ru")
 
               .letter
                 .letter__wrapper
-                  img(src="./images/bg-letter/letter.png", alt="").letter__img.letter__img--fl
-                  img(src="./images/bg-letter/letter-a.png", alt="").letter__img.letter__img--fb
-                  img(src="./images/bg-letter/letter-t.png", alt="").letter__img.letter__img--fb2
+                  img(data-src="./images/bg-letter/letter.png", alt="").lazyload.letter__img.letter__img--fl
+                  img(data-src="./images/bg-letter/letter-a.png", alt="").lazyload.letter__img.letter__img--fb
+                  img(data-src="./images/bg-letter/letter-t.png", alt="").lazyload.letter__img.letter__img--fb2
 
               .row
                 .col
@@ -161,7 +161,7 @@ html(lang="ru")
 
               .letter
                 .letter__wrapper
-                  img(src="./images/bg-letter/letter-o.png", alt="").letter__img.letter__img--wrb
+                  img(data-src="./images/bg-letter/letter-o.png", alt="").lazyload.letter__img.letter__img--wrb
 
               .row
                 .col
@@ -176,7 +176,7 @@ html(lang="ru")
                       // Video
                       .video.video--words
                         .video__img
-                          img(src="./tmp/words-img.png", alt="").img-fluid
+                          img(data-src="./tmp/words-img.png", alt="").lazyload.img-fluid
                         .video__block
                           a(href="https://www.youtube.com/watch?v=dtimHvmRfPU").popup-youtube.video__play.words__video
                             img(src="./images/icon-play.svg", alt="")
@@ -185,22 +185,178 @@ html(lang="ru")
           section.section.initiative
             .container
 
+              .letter
+                .letter__wrapper
+                  img(data-src="./images/bg-letter/letter-p.png", alt="").lazyload.letter__img.letter__img--ib
+                  img(data-src="./images/bg-letter/letter.png", alt="").lazyload.letter__img.letter__img--il
+                  img(data-src="./images/bg-letter/letter.png", alt="").lazyload.letter__img.letter__img--ir
+
               .row
                 .col
-                  .content__head
-                    h2 Благородная инициатива
+                  .initiative__wrapper
+                    .initiative__wrapper-left
+                      .content__head.initiative__head
+                        h2 Благородная инициатива
+                      p В свете распространения короновируса во всем мире и по инициативе главного раввина России Берл Лазара мы начали подобную инициативу, чтобы объединить всех русскоязычных евреев мира в этом свитке. Свиток Торы в настоящее время пишется, и у вас есть возможность принять в этом участие. 
+                      .d-none.d-xl-block
+                        .initiative__description “ Мы должны начать действовать. Купите букву сейчас – себе и всем своим близким! Давайте объединимся в написании этого свитка и в наших молитвах! “
+                        a(href="#payment").btn.btn--svg.anchor
+                          svg(xmlns='http://www.w3.org/2000/svg' fill='none' version='1.1' viewBox='0 0 336.9 69.6')
+                            g(transform='translate(4 -29.7)')
+                              rect.path-animate(width='334.9' height='67.6' x='-3.1' y='30.7' rx='33.8')
+                            rect.path(width='325' height='58' x='6' y='5.8' rx='29')
+                          span Получить букву
+                    .initiative__wrapper-img
+                      .initiative__img
+                        img(data-src="./tmp/initiative-img.png", alt="").lazyload
+                    .initiative__wrapper-content.d-xl-none
+                      .initiative__description “ Мы должны начать действовать. Купите букву сейчас – себе и всем своим близким! Давайте объединимся в написании этого свитка и в наших молитвах! “
+                      a(href="#payment").btn.btn--svg.initiative__btn.anchor
+                        svg(xmlns='http://www.w3.org/2000/svg' fill='none' version='1.1' viewBox='0 0 336.9 69.6')
+                          g(transform='translate(4 -29.7)')
+                            rect.path-animate(width='334.9' height='67.6' x='-3.1' y='30.7' rx='33.8')
+                          rect.path(width='325' height='58' x='6' y='5.8' rx='29')
+                        span Получить букву
 
           // Section
-          section.section.payment#payment
+          .section.payment#payment
             .container
+
+              .letter
+                .letter__wrapper
+                  img(data-src="./images/bg-letter/letter-a.png", alt="").lazyload.letter__img.letter__img--pyb
 
               .row
                 .col
+                  .payment__top
+                    .payment__top-info В 1 свитке Торы - 
+                      strong 304 805 букв
+                    .payment__top-description Поспешите приобрести букву в Торе и 
+                      strong духовный щит для себя и своих близких
                   .payment__form
-                    .h3 Платежная информация
+                    form(action="#!")
+                      .payment__wrapper
+                        .payment__wrapper-content
+                          legend Платежная информация
+                          fieldset
+                            .payment__form-fields
+                              .div1
+                                .form-group
+                                  input(type="text" name="name" placeholder="Имя и Фамилия").form-control
+                              .div2
+                                .form-group
+                                  input(type="text" name="city" placeholder="Город").form-control
+                              .div3
+                                .form-group
+                                  input(type="text" name="phone" placeholder="Телефон").form-control
+                              .div4
+                                .form-group
+                                  input(type="text" name="email" placeholder="Email").form-control
+                            .payment__form-info Рекомендуемый размер пожертвований: 
+                              strong 1 000 000 рублей
+                          fieldset
+                            .payment__form-donate
+                              .div1
+                                .payment__form-head.b Пожертвовать
+                              .div2
+                                .form-group
+                                  label.label-donate
+                                    input(type="radio" name="donate" checked)
+                                    span 100
+                              .div3
+                                .form-group
+                                  label.label-donate
+                                    input(type="radio" name="donate")
+                                    span 500
+                              .div4
+                                .form-group
+                                  label.label-donate
+                                    input(type="radio" name="donate")
+                                    span 1000
+                              .div5
+                                .form-group
+                                  input(type="text" name="donate-custom" placeholder="Своя сумма").form-control
+                          fieldset
+                            .form-group
+                              label.label-checkbox
+                                input(type="checkbox" name="checkbox1")
+                                svg(width='17' height='14' viewBox='0 0 17 14' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                  path.checkbox-path1(d='M16.0809 2.77965L14.9034 1.60211C14.7764 1.47508 14.5705 1.47508 14.4434 1.60211L8.38378 7.66143L6.22207 5.49988C6.09505 5.37286 5.88914 5.37286 5.76211 5.49988L4.58457 6.67743C4.52358 6.73842 4.48926 6.82121 4.48926 6.90741C4.48926 6.99361 4.52358 7.0764 4.58457 7.13739L8.1538 10.7063C8.2174 10.7699 8.30051 10.8016 8.38378 10.8016C8.46722 10.8016 8.55001 10.7699 8.61376 10.7063L16.0808 3.23961C16.1418 3.17862 16.1761 3.09583 16.1761 3.00963C16.1761 2.92343 16.1419 2.84064 16.0809 2.77965Z')
+                                  path.checkbox-path2(d='M12.1441 12.1907H1.80272V1.8491H12.3906L13.7706 0.547946C13.7706 0.368386 13.6249 0.222656 13.4453 0.222656H0.501559C0.321999 0.222656 0.17627 0.368386 0.17627 0.547946V13.4919C0.17627 13.6714 0.321999 13.8171 0.501559 13.8171H13.4455C13.6252 13.8171 13.7708 13.6714 13.7708 13.4919V7.33088L12.1443 9.03864L12.1441 12.1907Z')
+                                span У меня нет возможности сделать пожертвование
+                            .form-group
+                              label.label-checkbox
+                                input(type="checkbox" name="checkbox2" checked)
+                                svg(width='17' height='14' viewBox='0 0 17 14' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                  path.checkbox-path1(d='M16.0809 2.77965L14.9034 1.60211C14.7764 1.47508 14.5705 1.47508 14.4434 1.60211L8.38378 7.66143L6.22207 5.49988C6.09505 5.37286 5.88914 5.37286 5.76211 5.49988L4.58457 6.67743C4.52358 6.73842 4.48926 6.82121 4.48926 6.90741C4.48926 6.99361 4.52358 7.0764 4.58457 7.13739L8.1538 10.7063C8.2174 10.7699 8.30051 10.8016 8.38378 10.8016C8.46722 10.8016 8.55001 10.7699 8.61376 10.7063L16.0808 3.23961C16.1418 3.17862 16.1761 3.09583 16.1761 3.00963C16.1761 2.92343 16.1419 2.84064 16.0809 2.77965Z')
+                                  path.checkbox-path2(d='M12.1441 12.1907H1.80272V1.8491H12.3906L13.7706 0.547946C13.7706 0.368386 13.6249 0.222656 13.4453 0.222656H0.501559C0.321999 0.222656 0.17627 0.368386 0.17627 0.547946V13.4919C0.17627 13.6714 0.321999 13.8171 0.501559 13.8171H13.4455C13.6252 13.8171 13.7708 13.6714 13.7708 13.4919V7.33088L12.1443 9.03864L12.1441 12.1907Z')
+                                span Согласен с 
+                                  a(href="#!" target="_blank") условиями обработки персональных данных
+                            .payment__form-footer
+                              .div1
+                                button(type="submit").btn.btn--svg.payment__btn.anchor
+                                  svg(xmlns='http://www.w3.org/2000/svg' fill='none' version='1.1' viewBox='0 0 336.9 69.6')
+                                    g(transform='translate(4 -29.7)')
+                                      rect.path-animate(width='334.9' height='67.6' x='-3.1' y='30.7' rx='33.8')
+                                    rect.path(width='325' height='58' x='6' y='5.8' rx='29')
+                                  span Получить букву
+                              .div2
+                                .payment__sertificate 
+                                  img(src="./images/icon-page.svg", alt="")
+                                  span После оформления, сертификат о покупке буквы, отправляется на почту
+
+                        .payment__wrapper-form
+                          .payment__add
+                            .payment__add-wrapper
+                              .payment__add-block
+                                .payment__block-title Буква 
+                                  span 1 
+                                  | для
+                                .payment__block-wrapper
+                                  .div1
+                                    .form-group
+                                      input(type="text" name="letter-name-1" placeholder="Ваше имя").form-control
+                                  .div2
+                                    .form-group
+                                      input(type="text" name="letter-lastname-1" placeholder="Фамилия").form-control
+                                  .div3
+                                    .form-group
+                                      input(type="text" name="letter-mother-1" placeholder="Имя матери").form-control
+                              .payment__add-block
+                                button(type="button").payment__block-remove Удалить
+                                .payment__block-title Буква 
+                                  span 2 
+                                  | для
+                                .payment__block-wrapper
+                                  .div1
+                                    .form-group
+                                      input(type="text" name="letter-name-2" placeholder="Ваше имя").form-control
+                                  .div2
+                                    .form-group
+                                      input(type="text" name="letter-lastname-2" placeholder="Фамилия").form-control
+                                  .div3
+                                    .form-group
+                                      input(type="text" name="letter-mother-2" placeholder="Имя матери").form-control
+                              .payment__add-block
+                                button(type="button").payment__block-remove Удалить
+                                .payment__block-title Буква 
+                                  span 3 
+                                  | для
+                                .payment__block-wrapper
+                                  .div1
+                                    .form-group
+                                      input(type="text" name="letter-name-3" placeholder="Ваше имя").form-control
+                                  .div2
+                                    .form-group
+                                      input(type="text" name="letter-lastname-3" placeholder="Фамилия").form-control
+                                  .div3
+                                    .form-group
+                                      input(type="text" name="letter-mother-3" placeholder="Имя матери").form-control
+
+                            button(type="button").payment__add-btn Добавить еще одну букву
 
         include ./_include/_footer
-        div(style="height: 1000px; background-color: #000")
+        //- div(style="height: 1000px; background-color: #000")
 
     // Load Scripts
     include ./_include/_footer-js

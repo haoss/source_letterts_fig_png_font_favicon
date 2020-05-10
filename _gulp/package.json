@@ -11,7 +11,6 @@
     "compress": "gulp compress",
     "gulp": "gulp",
     "email": "gulp emailBuilder",
-    "critical": "gulp critical",
     "favicon": "gulp favicon-1-generate",
     "favicon-inject": "gulp favicon-2-inject",
     "favicon-update": "gulp favicon-3-check-for-update"

@@ -9,8 +9,7 @@ button {
 
 .btn {
   position: relative;
-  min-width: 327px;
-  min-height: 60px;
+  width: 336px;
   font-size: rem(17px);
   text-transform: uppercase;
   font-weight: 800;
@@ -23,10 +22,10 @@ button {
   color: $color-white;
   line-height: 1.5;
   display: inline-block;
-  transition: all 0.35s;
+  // transition: all 0.35s;
   svg {
     rect {
-      stroke: #d39c50;
+      stroke: $color-brown;
       stroke-width: 2;
       &.path-animate {
         stroke-dasharray: 120 620;
@@ -34,7 +33,7 @@ button {
         stroke-linecap: round;
       }
       &.path {
-        fill: #d39c50;
+        fill: $color-brown;
       }
     }
   }
@@ -47,8 +46,7 @@ button {
     text-decoration: none;
   }
   &--sm {
-    min-height: 42px;
-    min-width: 232px;
+    width: 239px;
     font-size: rem(13px);
     padding: 13px 10px 10px 10px;
   }
