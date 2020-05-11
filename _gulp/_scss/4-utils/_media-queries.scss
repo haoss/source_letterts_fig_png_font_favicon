@@ -14,6 +14,11 @@
       &-img3 {
         width: 364px;
       }
+      &.is-roll {
+        [class*="-img3"] {
+          animation-name: backgroundEffect-sm;
+        }
+      }
     }
     &__btn {
       width: 336px;
@@ -120,6 +125,12 @@
         bottom: 64px;
         width: 273px;
         height: 405px;
+      }
+      &.is-roll {
+        [class*="-img3"] {
+          animation-duration: 15s;
+          animation-name: backgroundEffect-md;
+        }
       }
     }
     &__description {
@@ -257,6 +268,12 @@
       &-img3 {
         width: 406px;
         margin-left: 48px;
+      }
+      &.is-roll {
+        [class*="-img3"] {
+          animation-duration: 15s;
+          animation-name: backgroundEffect-lg;
+        }
       }
     }
     &__untitle {
@@ -440,6 +457,12 @@
         height: auto;
         margin-left: 66px;
         bottom: 88px;
+      }
+      &.is-roll {
+        [class*="-img3"] {
+          animation-duration: 15s;
+          animation-name: backgroundEffect-xl;
+        }
       }
     }
     &__wrapper {

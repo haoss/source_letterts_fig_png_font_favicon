@@ -224,7 +224,7 @@ function formLetter() {
       btnAddLetter = form.find('.payment__add-btn'),
       letter = $('.payment__add-block'),
       formWrapper = form.find('.payment__add-wrapper'),
-      formArray = [0,1,2]
+      formArray = [0]
   ;
 
   $(document).on('click', '.payment__block-remove', function() {
