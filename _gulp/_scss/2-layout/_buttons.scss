@@ -37,7 +37,7 @@ button {
       }
     }
   }
-  &:hover {
+  &:hover, &:active {
     text-decoration: none;
     background: darken($color-brown, 10%);
     color: $color-white;
@@ -60,7 +60,7 @@ button {
       &+span {
         position: absolute;
         left: 0;
-        top: calc(50% + 2px);
+        top: calc(50% + 1px);
         width: 100%;
         transform: translateY(-50%);
       }
