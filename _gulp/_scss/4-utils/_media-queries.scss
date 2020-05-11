@@ -1,7 +1,23 @@
+@media (min-width: 380px) {
+  .header__logo {
+    margin-left: 0;
+  }
+  .header__btn {
+    width: 175px;
+    font-size: 10px;
+  }
+}
 @include media-breakpoint-up(sm) {
   .header {
     &__btn {
-      display: block;
+      width: 239px;
+      font-size: rem(13px);
+    }
+    &__logo {
+      margin-right: 40px;
+      img {
+        width: 164px;
+      }
     }
   }
   .roll {
@@ -121,6 +137,7 @@
       transform: translateX(37px);
       margin-top: -116px;
       margin-bottom: 0;
+      max-width: inherit;
       &-img3 {
         bottom: 64px;
         width: 273px;
@@ -710,7 +727,8 @@
     &__block {
       width: 803px;
       height: 850px;
-      margin-top: -160px;
+      margin: -160px 0 0 0;
+      transform: none;
       &-img1, &-img2 {
         width: 90px;
       }

@@ -65,6 +65,16 @@ legend {
       outline: none;
       border-color: darken($color-gray,25%);
     }
+    &.error {
+      border-color: #fb7f7f;
+      &+label {
+        color: #fb7f7f;
+        font-size: 13px;
+        margin: 0;
+        padding-left: 20px;
+        font-weight: 500;
+      }
+    }
   }
   &-label, &__label {
     display: block;
@@ -86,6 +96,7 @@ textarea {
   color: $color-white;
   text-align: center;
   cursor: pointer;
+  transition: all 0.35s;
   input {
     display: none;
     &+span {
@@ -93,11 +104,21 @@ textarea {
       display: block;
       border-radius: 35px;
       height: 40px;
-      line-height: 42px;
+      line-height: 39px;
+      border: 2px solid $color-brown;
+      transition: all 0.35s;
     }
     &:checked {
       &+span {
         background: darken($color-brown,15%);
+        border-color: darken($color-brown,15%);
+      }
+    }
+  }
+  &:hover {
+    input {
+      &+span {
+        border-color: darken($color-brown,15%);
       }
     }
   }
@@ -110,7 +131,7 @@ textarea {
   font-size: rem(14px);
   line-height: 1;
   margin: 0;
-  display: block;
+  display: inline-block;
   cursor: pointer;
   input {
     display: none;
@@ -170,4 +191,13 @@ textarea {
       color: #ff0000;
     }
   }
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }

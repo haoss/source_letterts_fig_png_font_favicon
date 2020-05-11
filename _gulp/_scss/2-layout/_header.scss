@@ -10,14 +10,21 @@
   backdrop-filter: blur(2px);
   transition: all 0.35s;
   &__wrapper {
-    height: 100px;
+    height: 68px;
     display: flex;
     align-items: center;
   }
   &__logo {
     flex-grow: 1;
     flex-shrink: 0;
-    margin-right: 40px;
+    margin-right: 5px;
+    margin-left: -10px;
+    img {
+      width: 164px;
+      height: 29px;
+      background-image: url('../images/logo.png');
+      background-repeat: no-repeat;
+    }
   }
   &__nav {
     flex-grow: 1;
@@ -47,8 +54,9 @@
     }
   }
   &__btn {
-    display: none;
     flex-shrink: 0;
+    width: 150px;
+    font-size: 8px;
   }
   &-holder {
     height: 100px;

@@ -29,7 +29,7 @@ button {
       stroke-width: 2;
       &.path-animate {
         stroke-dasharray: 120 620;
-        stroke-dashoffset: 0;
+        stroke-dashoffset: -300;
         stroke-linecap: round;
       }
       &.path {

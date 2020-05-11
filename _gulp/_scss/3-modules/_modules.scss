@@ -441,7 +441,8 @@
   &__block {
     position: relative;
     height: 473px;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
+    max-width: 450px;
     img {
       position: absolute;
     }
@@ -895,6 +896,19 @@
       flex-direction: column;
       align-items: center;
     }
+    &-donate {
+      .form-control {
+        text-align: center;
+        font-weight: 400;
+        padding-top: 10px;
+        &.has-donate {
+          background: darken($color-brown,15%);
+          border-color: darken($color-brown,15%);
+          color: $color-white;
+          font-weight: 900;
+        }
+      }
+    }
   }
   &__wrapper {
     display: flex;
@@ -948,6 +962,7 @@
       text-transform: uppercase;
       padding-right: 25px;
       font-weight: 500;
+      transition: color 0.35s;
       &::after {
         content: '';
         position: absolute;
@@ -956,6 +971,9 @@
         top: 19px;
         width: 13px;
         height: 13px;
+      }
+      &:hover {
+        color: $color-brown;
       }
     }
   }
@@ -982,6 +1000,7 @@
       font-weight: bold;
       min-height: 25px;
       font-size: rem(14px);
+      transition: color 0.35s;
       &::before {
         content: '';
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.3936 0.128906C5.32823 0.128906 0.393555 5.10708 0.393555 11.2259C0.393555 17.3447 5.32823 22.3228 11.3936 22.3228C17.4589 22.3228 22.3936 17.3447 22.3936 11.2259C22.3936 5.10708 17.4588 0.128906 11.3936 0.128906ZM16.8936 12.613H12.7685V16.7744H10.0186V12.613H5.89355V9.83876H10.0186V5.67739H12.7685V9.83876H16.8936V12.613Z' fill='%23D39C50'/%3E%3C/svg%3E");
@@ -990,6 +1009,9 @@
         position: absolute;
         left: 0;
         top: 0;
+      }
+      &:hover {
+        color: $color-white;
       }
     }
     &-wrapper {

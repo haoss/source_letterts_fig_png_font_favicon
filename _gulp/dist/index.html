@@ -36,7 +36,7 @@
                 <header class="header">
                     <div class="container">
                         <div class="header__wrapper">
-                            <div class="logo header__logo"><a class="anchor" href="#body"><img src="./images/logo.png" alt=""></a></div>
+                            <div class="logo header__logo"><a class="anchor" href="#body"><img src="./images/sp.gif" alt=""></a></div>
                             <nav class="nav header__nav">
                                 <ul>
                                     <li><a class="anchor" href="#learn">о проекте</a></li>
@@ -269,7 +269,7 @@
                                         <div class="payment__top-description">Поспешите приобрести букву в Торе и <strong>духовный щит для себя и своих близких</strong></div>
                                     </div>
                                     <div class="payment__form">
-                                        <form action="#!">
+                                        <form id="form" method="get" action="">
                                             <div class="payment__wrapper">
                                                 <div class="payment__wrapper-content">
                                                     <legend>Платежная информация</legend>
@@ -277,29 +277,29 @@
                                                         <div class="payment__form-fields">
                                                             <div class="div1">
                                                                 <div class="form-group">
-                                                                    <input class="form-control" type="text" name="name" placeholder="Имя и Фамилия">
+                                                                    <input class="form-control" type="text" name="name" placeholder="Имя и Фамилия" required>
                                                                 </div>
                                                             </div>
                                                             <div class="div2">
                                                                 <div class="form-group">
-                                                                    <input class="form-control" type="text" name="city" placeholder="Город">
+                                                                    <input class="form-control" type="text" name="city" placeholder="Город" required>
                                                                 </div>
                                                             </div>
                                                             <div class="div3">
                                                                 <div class="form-group">
-                                                                    <input class="form-control" type="text" name="phone" placeholder="Телефон">
+                                                                    <input class="form-control" type="text" name="phone" placeholder="Телефон" required>
                                                                 </div>
                                                             </div>
                                                             <div class="div4">
                                                                 <div class="form-group">
-                                                                    <input class="form-control" type="text" name="email" placeholder="Email">
+                                                                    <input class="form-control" type="text" name="email" placeholder="Email" required>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="payment__form-info">Рекомендуемый размер пожертвований: <strong>1 000 000 рублей</strong></div>
                                                     </fieldset>
                                                     <fieldset>
-                                                        <div class="payment__form-donate">
+                                                        <div class="payment__form-donate" id="payment__donate">
                                                             <div class="div1">
                                                                 <div class="payment__form-head b">Пожертвовать</div>
                                                             </div>
@@ -326,14 +326,14 @@
                                                             </div>
                                                             <div class="div5">
                                                                 <div class="form-group">
-                                                                    <input class="form-control" type="text" name="donate-custom" placeholder="Своя сумма">
+                                                                    <input class="form-control" id="donate-custom" type="number" name="donate-custom" placeholder="Своя сумма">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </fieldset>
                                                     <fieldset>
                                                         <div class="form-group">
-                                                            <label class="label-checkbox">
+                                                            <label class="label-checkbox" id="no-donate">
                                                                 <input type="checkbox" name="checkbox1">
                                                                 <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path class="checkbox-path1" d="M16.0809 2.77965L14.9034 1.60211C14.7764 1.47508 14.5705 1.47508 14.4434 1.60211L8.38378 7.66143L6.22207 5.49988C6.09505 5.37286 5.88914 5.37286 5.76211 5.49988L4.58457 6.67743C4.52358 6.73842 4.48926 6.82121 4.48926 6.90741C4.48926 6.99361 4.52358 7.0764 4.58457 7.13739L8.1538 10.7063C8.2174 10.7699 8.30051 10.8016 8.38378 10.8016C8.46722 10.8016 8.55001 10.7699 8.61376 10.7063L16.0808 3.23961C16.1418 3.17862 16.1761 3.09583 16.1761 3.00963C16.1761 2.92343 16.1419 2.84064 16.0809 2.77965Z"></path>
@@ -437,7 +437,8 @@
         <script src="./js/libs/slick/slick.min.js"></script>
         <script src="./js/libs/anime.min.js"></script>
         <script src="./js/libs/lazysizes.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+        <script src="./js/libs/gsap.min.js"></script>
+        <script src="./js/libs/jquery.validate.min.js"></script>
         <script src="./js/common.js"></script>
     </body>
 </html>

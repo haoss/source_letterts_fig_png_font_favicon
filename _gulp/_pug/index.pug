@@ -234,7 +234,7 @@ html(lang="ru")
                     .payment__top-description Поспешите приобрести букву в Торе и 
                       strong духовный щит для себя и своих близких
                   .payment__form
-                    form(action="#!")
+                    form#form(method="get" action="")
                       .payment__wrapper
                         .payment__wrapper-content
                           legend Платежная информация
@@ -242,20 +242,20 @@ html(lang="ru")
                             .payment__form-fields
                               .div1
                                 .form-group
-                                  input(type="text" name="name" placeholder="Имя и Фамилия").form-control
+                                  input(type="text" name="name" placeholder="Имя и Фамилия" required).form-control
                               .div2
                                 .form-group
-                                  input(type="text" name="city" placeholder="Город").form-control
+                                  input(type="text" name="city" placeholder="Город" required).form-control
                               .div3
                                 .form-group
-                                  input(type="text" name="phone" placeholder="Телефон").form-control
+                                  input(type="text" name="phone" placeholder="Телефон" required).form-control
                               .div4
                                 .form-group
-                                  input(type="text" name="email" placeholder="Email").form-control
+                                  input(type="text" name="email" placeholder="Email" required).form-control
                             .payment__form-info Рекомендуемый размер пожертвований: 
                               strong 1 000 000 рублей
                           fieldset
-                            .payment__form-donate
+                            #payment__donate.payment__form-donate
                               .div1
                                 .payment__form-head.b Пожертвовать
                               .div2
@@ -275,10 +275,10 @@ html(lang="ru")
                                     span 1000
                               .div5
                                 .form-group
-                                  input(type="text" name="donate-custom" placeholder="Своя сумма").form-control
+                                  input#donate-custom(type="number" name="donate-custom" placeholder="Своя сумма").form-control
                           fieldset
                             .form-group
-                              label.label-checkbox
+                              label.label-checkbox#no-donate
                                 input(type="checkbox" name="checkbox1")
                                 svg(width='17' height='14' viewBox='0 0 17 14' fill='none' xmlns='http://www.w3.org/2000/svg')
                                   path.checkbox-path1(d='M16.0809 2.77965L14.9034 1.60211C14.7764 1.47508 14.5705 1.47508 14.4434 1.60211L8.38378 7.66143L6.22207 5.49988C6.09505 5.37286 5.88914 5.37286 5.76211 5.49988L4.58457 6.67743C4.52358 6.73842 4.48926 6.82121 4.48926 6.90741C4.48926 6.99361 4.52358 7.0764 4.58457 7.13739L8.1538 10.7063C8.2174 10.7699 8.30051 10.8016 8.38378 10.8016C8.46722 10.8016 8.55001 10.7699 8.61376 10.7063L16.0808 3.23961C16.1418 3.17862 16.1761 3.09583 16.1761 3.00963C16.1761 2.92343 16.1419 2.84064 16.0809 2.77965Z')
