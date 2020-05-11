@@ -453,10 +453,10 @@
         width: 71px;
       }
       &-img3 {
-        width: 506px;
-        height: auto;
+        width: calc(100% - 126px);
+        height: 508px;
         margin-left: 66px;
-        bottom: 88px;
+        bottom: 86px;
       }
       &.is-roll {
         [class*="-img3"] {
@@ -719,7 +719,12 @@
         bottom: 114px;
         width: calc(100% - 162px);
         height: 640px;
-        
+      }
+      &.is-roll {
+        [class*="-img3"] {
+          animation-duration: 15s;
+          animation-name: backgroundEffect-xl;
+        }
       }
     }
   }

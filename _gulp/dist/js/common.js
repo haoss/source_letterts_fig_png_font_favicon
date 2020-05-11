@@ -106,7 +106,11 @@ $(window).on('load', function() {
 
 function animatedLanding(){
   var tl = gsap.timeline();
-  tl
+
+  var width = $(window).width();
+
+  if (width >= 1600 ) {
+    tl
     .from('.roll__wrapper-img', {duration: 2, autoAlpha: 0}, 'first')
     .from('.header__btn', {duration: 1, y: -50, autoAlpha: 0}, 'first')
     .from('.roll__btn', {duration: 1, y: 100, autoAlpha: 0}, 'first')
@@ -115,10 +119,17 @@ function animatedLanding(){
     .set('.roll__block', {className:"+=roll__block is-roll"})
     .fromTo('.roll__content-wrapper', {clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)'}, {duration: 1.5, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)'}, 'first')
   ;
-
-  var width = $(window).width();
-
-  if (width < 1600) {
+  } else if (width >= 1201 && width <= 1599) {
+    tl
+    .from('.roll__wrapper-img', {duration: 2, autoAlpha: 0}, 'first')
+    .from('.header__btn', {duration: 1, y: -50, autoAlpha: 0}, 'first')
+    .from('.roll__btn', {duration: 1, y: 100, autoAlpha: 0}, 'first')
+    .from('.roll__block', {duration: 1, top: '-100%', autoAlpha: 0}, 'first')
+    .from('.roll__block', {duration: 1.5, width: 128, left: '50%'}, '-=1')
+    .set('.roll__block', {className:"+=roll__block is-roll"})
+    .fromTo('.roll__content-wrapper', {clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)'}, {duration: 1.5, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)'}, 'first')
+  ;
+  } else if (width < 1200) {
     tl.kill();
     gsap.set('*', {clearProps:"all"});
   }
