@@ -97,9 +97,12 @@
         }
       }
     }
-    // &__wrapper {
-    //   height: 94px;
-    // }
+    &__wrapper {
+      height: 94px;
+      .is-scroll & {
+        height: 68px;
+      }
+    }
   }
   .roll {
     padding-bottom: 45px;

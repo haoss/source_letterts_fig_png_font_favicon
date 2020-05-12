@@ -13,6 +13,7 @@
     height: 68px;
     display: flex;
     align-items: center;
+    transition: height 0.35s;
   }
   &__logo {
     flex-grow: 1;
@@ -46,8 +47,8 @@
           margin-left: 25px;
         }
         &>a, &>span {
-          height: 100px;
-          line-height: 106px;
+          height: 68px;
+          line-height: 70px;
           display: block;
         }
       }
