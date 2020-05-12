@@ -277,6 +277,20 @@
       }
     }
   }
+  .modal {
+    padding: 75px 50px;
+    &__text {
+      margin: 0 auto 40px;
+      font-size: rem(30px);
+      b {
+        font-size: rem(65px);
+      }
+    }
+    &__btn {
+      width: 374px;
+      font-size: rem(16px);
+    }
+  }
 }
 
 @include media-breakpoint-up(lg) {
@@ -677,6 +691,16 @@
       }
     }
   }
+  .modal {
+    padding: 115px 50px;
+    &__text {
+      font-size: rem(30px);
+      b {
+        line-height: 90px;
+        font-size: rem(90px);
+      }
+    }
+  }
 }
 
 @include media-breakpoint-up(xxl) {
@@ -916,4 +940,5 @@
       margin-top: 0;
     }
   }
+  
 }

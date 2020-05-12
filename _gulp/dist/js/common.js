@@ -84,6 +84,21 @@ $(document).on('ready', function(){
 
   $("#form").validate();
 
+  $('.j-modal-test').on('click', function(){
+    setTimeout(function(){
+      $.magnificPopup.open({
+        showCloseBtn: false,
+        items: {
+          src: '#modal'
+        },
+        type: 'inline'
+      })
+    }, 3000)
+  });
+  $('.j-modal-close').on('click', function(){
+    $.magnificPopup.close();
+  });
+
   headerScroll();
   readMoreContent();
   formLetter();
