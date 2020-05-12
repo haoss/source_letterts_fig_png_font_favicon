@@ -44,6 +44,7 @@ button {
   }
   &:active, &:focus {
     text-decoration: none;
+    color: $color-white;
   }
   &--sm {
     width: 239px;
